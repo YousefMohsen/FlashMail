@@ -1,0 +1,29 @@
+{
+  "name": "flashmailserver",
+  "version": "0.0.0",
+  "author": {
+   "name": "Yousef Mohsen",
+   "url": "https://github.com/yousefMohsen"
+
+  },
+  "private": true,
+  "scripts": {
+    "start": "node ./bin/www",
+    "devstart": "nodemon ./bin/www"
+  },
+  "dependencies": {
+    "body-parser": "~1.17.1",
+    "cookie-parser": "~1.4.3",
+    "cors": "^2.8.4",
+    "debug": "~2.6.3",
+    "expo-server-sdk": "^2.3.3",
+    "express": "~4.15.2",
+    "mongoose": "^4.10.8",
+    "morgan": "~1.8.1",
+    "pug": "~2.0.0-beta11",
+    "serve-favicon": "~2.4.2"
+  },
+  "devDependencies": {
+    "nodemon": "^1.12.1"
+  }
+}
