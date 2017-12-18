@@ -1,6 +1,33 @@
 # FlashMail
 
 The goal of this report is to help future Computer Science in the Students Writings course to understand the parts of the project we have started building and to help them complete the development and maintenance of this project. 
+### Table of Contents
+- [FlashMail](#flashmail)
+- [Introduction](#introduction)
+    - [The problem](#the-problem)
+    - [The solution - single source of information:](#the-solution---single-source-of-information)
+      - [The idea](#the-idea)
+      - [The platform](#the-platform)
+- [Design & architecture](#design--architecture)
+  - [General](#general)
+  - [The system architecture and deployment](#the-system-architecture-and-deployment)
+    - [Database documents](#database-documents)
+      - [Index-reverse searching](#index-reverse-searching)
+  - [Designing the presentation layers](#designing-the-presentation-layers)
+    - [Phone client – for the students](#phone-client--for-the-students)
+    - [Web client – for the teacher](#web-client--for-the-teacher)
+- [Future development](#future-development)
+  - [Setting up the development environment](#setting-up-the-development-environment)
+    - [Backend](#backend)
+      - [Setting up MongoDB](#setting-up-mongodb)
+      - [Setting up the node-server](#setting-up-the-node-server)
+    - [Frontend](#frontend)
+      - [Setting up the web client.](#setting-up-the-web-client)
+      - [Setting up the phone-client.](#setting-up-the-phone-client)
+    - [Explaining the redux implementation](#explaining-the-redux-implementation)
+  - [API documentation](#api-documentation)
+    - [Features in the web client](#features-in-the-web-client)
+    - [Features in the phone client](#features-in-the-phone-client)
 
 
 # Introduction
@@ -18,6 +45,7 @@ We want to realise this idea by building a platform that consists of two interfa
 
 **1)	An app for the student**
 An app that assembles all information sent by the school in one place. All messages sent by the school is collected in the app, where the student at any time can come back and check the messages. The student will be able to see the messages, who sent the them and in which course the messages belongs.
+
 **2)	A web interface for the teacher**
 We want to build a web-application where the teachers can manage the platform. The goal is to give the teachers the tools to send messages, create new classes and edit/delete exiting student/classes. 
 
@@ -266,6 +294,7 @@ Beneath is a list of all completed features:
 | Profile details   | Student can see all his/her profile details   | :white_check_mark: |
 | Login   | Student can login to the system using the schools mail  | :white_check_mark: |
 | Timestamp | Timestamp system where not all messages are fetched every time user opens the phone(partly done)  | :white_circle: |
+| Message searching | Search in the message history | :x: |
 | Calender | Show the students calender in the app  | :x: |
 
 
