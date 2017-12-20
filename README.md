@@ -133,7 +133,7 @@ use flashmailDB
 ```
 Now that we have created a database we want to create a user that have read and write permission to that database. Make sure that you have switched to the newly created database and type the following to create a new user: 
 ```
-db.createUser({user: "readWriteUser", pwd: "carlsbergsport500ml", roles:[{role: "readWrite", db: "flashmailDB"}]
+db.createUser({user: "readWriteUser", pwd: "carlsbergsport500ml", roles:[{role: "readWrite", db: "flashmailDB"}]})
 ```
 
 Now that we have a database ready and a user with read and write permission, we can go and clone the server-project so we can connect the node-server to the database that we just created.
