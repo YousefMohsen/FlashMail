@@ -232,7 +232,7 @@ The project will now load in your physical phone/emulator.
 
 To manage the state of the UI-components in the web interface(the teachers interface), I have chosen Redux as state management framework. 
  
- ![](Images/reduxDiagram.PNG "Expo")
+ ![](Images/reduxDiagram.png "")
  
  Redux data flow
 
